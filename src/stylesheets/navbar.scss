@@ -1,0 +1,72 @@
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	margin: 16px 0;
+
+	&__item {
+		display: flex;
+		cursor: pointer;
+		
+		&:hover &-container {
+			transition: background-color 0.2s;
+			background-color: rgb(233, 233, 233);
+		}
+		
+		&-container {
+			display: flex;
+			align-items: center;
+			height: 48px;
+			padding: 8px 16px;
+			margin: 2px 0;
+			transition: background-color 0.2s;
+			background-color: transparent;
+			border-radius: 48px;
+		}
+	}
+
+	&__item--active &__text {
+		font-weight: 700;
+	}
+
+	&__icon {
+		display: inline-block;
+		width: 24px;
+	}
+
+	&__text {
+		font-family: 'Raleway';
+		margin: 0 4px 0 12px;
+		font-size: 1.3rem;
+		font-weight: 400;
+	}
+}
+
+.aside-left__header {
+	position: sticky;
+	top: 0;
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .aside-left__logo {
+	display: flex;
+	justify-content: end;
+	gap: 8px;
+	align-items: center;
+  }
+  .aside-left__logo-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+  }
+  .aside-left__logo-text {
+	font-family: "Comic Sans MS", sans-serif;
+	font-weight: 700;
+	color: var(--main-accent);
+  }
+  .aside-left__logo-image {
+	width: 48px;
+  }
+

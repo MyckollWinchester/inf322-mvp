@@ -11,4 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --header-height: 56px;
+	--container-size: 608px;
+	--main-accent: rgb(0, 186, 124);
+	--dim-accent: rgba(0, 186, 124, 0.849);
 }

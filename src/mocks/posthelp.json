@@ -1,0 +1,20 @@
+[
+    {
+        "post_id": 1,
+        "author": "Antonia Castillo",
+        "author_handler": "@antoniacst",
+        "avatar": "1.jpg",
+        "time": "hace 34 minutos",
+        "location": "Valparaíso, Cerro Carcel",
+        "content": "Mi calefon se sigue apagando en las mañanas, necesito un gasfiter que me ayude a revisarlo, por favor."
+    },
+    {"post_id": 2,
+        "author": "Diego Soto",
+        "author_handler": "@sotozam",
+        "avatar": "2.jpg",
+        "time": "hace 1 hora",
+        "location": "Valparaíso, Playa ancha",
+        "content": "hola, tengo una gotera en mi techo, necesito un maestro que me ayude a repararla, si puede los sabados mejor"
+    }
+
+]

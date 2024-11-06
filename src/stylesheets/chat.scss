@@ -1,0 +1,112 @@
+.container{
+    position: relative;
+}
+
+.name {
+    height: 60px;
+    width: calc(var(--container-size) - 0.7px);
+    // display: sticky;
+    background-color: var(--main-bg-color);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    border-right: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+
+    &-content{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        // gap: 10px;
+    }
+    
+    &-pfp {
+        padding: 0 6px;
+        border-radius: 100%;
+    }
+}
+
+.chatbox {
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+    // background-color: gray;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    // flex-direction: column;
+}
+
+.msg {
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px;
+    margin: 2px 4px;
+    color: white;
+}
+
+.msg-left{
+    background-color: rgb(192, 191, 191);
+    right: 0px;
+}
+.msg-right {
+    background-color: var(--main-accent);
+    justify-content: end;
+
+}
+
+.messagebox {
+    height: 45px;
+    // width: calc(var(--container-size)-2);
+    width: 607px;
+    // display: sticky;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-right: 1px solid rgb(197, 197, 197);
+    
+    
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 10px;
+        padding: 5px;
+
+    }
+    
+    &-input{
+        height: 30px;
+        width: 100%;
+        padding: 10px;
+        margin: 0 10px;
+        // border: 1px solid var(--main-accent);
+        border: none;
+        // border-radius: 20px;
+
+        &:focus-visible{
+            // border-radius: none;
+            border: none;
+            outline: none;
+        }
+    }
+
+    &-send {
+        cursor: pointer;
+    }
+}
+
+.icon{
+    width: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(230, 230, 230);
+        transition: all ease-in-out 0.1s;
+    }
+}
+

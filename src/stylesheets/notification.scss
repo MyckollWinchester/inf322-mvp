@@ -1,0 +1,31 @@
+.notification {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px;
+  color: #333;
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+
+  }
+  
+  &:hover {
+    background-color: #f0f0f0;
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+  }
+}
+
+.header-not {
+  font-size: 20px;
+  display: flex;
+  font-weight: bold;
+  height: 60px;
+  align-items: center;
+
+  &:hover {
+    background-color: white;
+    cursor: default;
+  }
+}

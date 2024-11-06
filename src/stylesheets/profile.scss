@@ -1,0 +1,67 @@
+.main-header-p {
+    display: flex;
+    align-items: center;
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 99;
+    height: var(--header-height);
+    border-bottom: 1px solid lightgrey;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.profile {
+    &__pfp {
+        position: absolute;
+        width: 128px;
+        top: 180px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        border: 6px solid white;
+    }
+
+    &__name {
+        text-align: center;
+        margin-top: 72px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__profession {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: grey;
+    }
+
+    &__stars {
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4px;
+            transform: translateX(-7px);
+            padding-bottom: 16px;
+        }
+        
+        &-icon {
+            width: 32px;
+        }
+        
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: translate(4px, -3px);
+    }
+    
+    &__distance {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        color: rgb(55, 55, 55);
+        gap: 8px;
+        padding: 12px 12px;
+    }
+}

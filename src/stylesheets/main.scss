@@ -1,0 +1,142 @@
+.main-header {
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 99;
+
+	&__category {
+		display: flex;
+		height: var(--header-height);
+		border-bottom: 1px solid lightgrey;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: calc(var(--container-size)/2);
+			height: 100%;
+			font-weight: 600;
+			font-size: 1.2rem;
+			cursor: pointer;
+			transition: all ease-in-out 0.05s;
+
+			&:hover {
+				background: rgb(238, 238, 238);
+			}
+
+			&--selected {
+				background-color: var(--main-accent);
+				font-weight: bold;
+				color: white;
+
+				&:hover {
+					background-color: var(--main-accent);
+				}
+			}
+
+		}
+	}
+}
+
+.post {
+	--pfp-size: 48px;
+	--gap: 8px;
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 16px;
+	// cursor: pointer;
+	
+	&:hover {
+		// background: #f5f5f5;
+	}
+
+	&__header {
+		display: flex;
+	}
+
+	&__pfp {
+		border-radius: 50%;
+		aspect-ratio: 1/1;
+		width: var(--pfp-size);
+
+		&:hover {
+			filter: brightness(0.9);
+		}
+
+		&-container {
+			aspect-ratio: 1/1;
+			width: calc(var(--pfp-size) + 2*var(--gap));
+			align-items: center;
+			justify-content: center;
+			display: flex;
+		}
+	}
+
+	&__data {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&-row1 {
+			display: flex;
+			gap: 4px;
+		}
+
+		&-row2 {
+			display: flex;
+		}
+	}
+
+	&__name {
+		font-weight: 600;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__time {
+		color: grey;
+	}
+
+	&__location {
+		color: grey;
+	}
+
+	&__image {
+		border-radius: 8px;
+
+		&-container {
+			display: flex;
+			justify-content: center;
+			margin: 0 8px 8px 8px;
+			border-radius: 8px;
+			border: 1px solid lightgrey;
+		}
+	}
+
+	&__content {
+		margin: 12px;
+
+		&__title {
+			font-size: 20px;
+		}
+	}
+
+	&__send-message {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 140px;
+		margin-left: 12px;
+		background-color: var(--main-accent);
+		color: white;
+		border-radius: 32px;
+		font-weight: 600;
+		padding: 8px 8px;
+		
+		&:hover{
+			background-color: var(--dim-accent);
+		}
+
+	}
+}

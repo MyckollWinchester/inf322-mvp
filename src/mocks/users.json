@@ -1,0 +1,193 @@
+[
+    {
+        "id": 8,
+        "name": "Juan Pérez",
+        "profession": "Servicio de Jardinería",
+        "rating": 5.0,
+        "distance": 1.2,
+        "avatar": "8.jpg",
+        "banner": "8.jpg",
+        "posts": [
+            {
+                "post_id": 8,
+                "author": "Juan Pérez - Servicio de Jardinería",
+                "author_handler": "@juanperez",
+                "avatar": "8.jpg",
+                "time": "hace 23 segundos",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "¡Deja tu jardín impecable! Soy Juan, con más de 5 años de experiencia en jardinería, te ofrezco servicio de corte de pasto, poda de árboles y cuidado de plantas. Trabajo rápido y eficiente. Disponible los fines de semana. ¡Contáctame y dale vida a tu jardín!"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "María López",
+        "profession": "Reparación de Electrodomésticos",
+        "rating": 4.8,
+        "distance": 2.6,
+        "avatar": "7.jpg",
+        "banner": "7.jpg",
+        "posts": [
+            {
+                "post_id": 7,
+                "author": "María López - Reparación de Electrodomésticos",
+                "author_handler": "@marialopez",
+                "avatar": "7.jpg",
+                "time": "hace 12 minuto",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "¿Tu lavadora o refrigerador está fallando? Soy María, técnica en reparación de electrodomésticos con 10 años de experiencia. Puedo arreglar desde microondas hasta lavavajillas. Servicio rápido, económico y garantizado. ¡No dudes en contactarme!",
+                "image": "post-7.png"
+            },
+            {
+                "post_id": 9,
+                "author": "María López - Reparación de Electrodomésticos",
+                "author_handler": "@marialopez",
+                "avatar": "7.jpg",
+                "time": "hace 2 días",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Es mi primera vez en HelpMyHome y estoy muy emocionada de poder ayudar a la comunidad. Soy técnica en reparación de electrodomésticos con 10 años de experiencia. Puedo arreglar desde microondas hasta lavavajillas."
+            },
+            {
+                "post_id": 10,
+                "author": "María López - Reparación de Electrodomésticos",
+                "author_handler": "@marialopez",
+                "avatar": "7.jpg",
+                "time": "hace 2 días",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Como se borran los posts?"
+            },
+            {
+                "post_id": 11,
+                "author": "María López - Reparación de Electrodomésticos",
+                "author_handler": "@marialopez",
+                "avatar": "7.jpg",
+                "time": "hace 2 días",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Es mi prim"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Carlos Mendoza",
+        "profession": "Plomería",
+        "rating": 4.5,
+        "distance": 3.1,
+        "avatar": "6.jpg",
+        "banner": "6.jpg",
+        "posts": [
+            {
+                "post_id": 6,
+                "author": "Carlos Mendoza - Plomería",
+                "author_handler": "@carlosmendoza",
+                "avatar": "6.jpg",
+                "time": "hace 48 minutos",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Soy Carlos, plomero con más de 15 años de experiencia en todo tipo de trabajos. Desde fugas de agua hasta instalación de tuberías nuevas, lo hago todo. Servicio disponible 24/7 para emergencias. ¡Llama ahora y te ayudo a resolver cualquier problema de plomería!"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ana García",
+        "profession": "Limpieza a Domicilio",
+        "rating": 4.3,
+        "distance": 4.2,
+        "avatar": "5.jpg",
+        "banner": "5.jpg",
+        "posts": [
+            {
+                "post_id": 5,
+                "author": "Ana García - Limpieza a Domicilio",
+                "author_handler": "@anagarcia",
+                "avatar": "5.jpg",
+                "time": "hace 1 hora",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "¿Necesitas ayuda con la limpieza de tu hogar? Ofrezco un servicio completo de limpieza, desde baños hasta cocina. Soy puntual, detallista y confiable. Precios accesibles y disponibilidad flexible. ¡Haz tu vida más fácil, contáctame!"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Pedro Ramírez",
+        "profession": "Electricista",
+        "rating": 4.2,
+        "distance": 5.3,
+        "avatar": "4.jpg",
+        "banner": "4.jpg",
+        "posts": [
+            {
+                "post_id": 4,
+                "author": "Pedro Ramírez - Electricista",
+                "author_handler": "@pedroramirez",
+                "avatar": "4.jpg",
+                "time": "hace 1 hora",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Soy Pedro, electricista certificado con más de 12 años de experiencia. Me especializo en instalaciones eléctricas, reparación de cortocircuitos, y mantenimiento general. Servicios seguros y confiables para tu hogar o negocio. ¡Contáctame para cualquier necesidad eléctrica!",
+                "image": "post-4.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Laura Ortiz",
+        "profession": "Cuidado de Mascotas",
+        "rating": 4.0,
+        "distance": 6.1,
+        "avatar": "3.jpg",
+        "banner": "3.jpg",
+        "posts": [
+            {
+                "post_id": 3,
+                "author": "Laura Ortiz - Cuidado de Mascotas",
+                "author_handler": "@lauraortiz",
+                "avatar": "3.jpg",
+                "time": "hace 2 horas",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Soy Laura, amante de los animales y experta en cuidado de mascotas. Ofrezco servicios de paseo de perros, alimentación y compañía para tus amigos peludos cuando estés fuera. Conmigo estarán en las mejores manos. ¡Consulta disponibilidad!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Roberto Silva",
+        "profession": "Pintura y Remodelación",
+        "rating": 3.9,
+        "distance": 7.2,
+        "avatar": "2.jpg",
+        "banner": "2.jpg",
+        "posts": [
+            {
+                "post_id": 2,
+                "author": "Roberto Silva - Pintura y Remodelación",
+                "author_handler": "@robertosilva",
+                "avatar": "2.jpg",
+                "time": "hace 2 horas",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "¿Quieres renovar tu hogar? Soy Roberto, especialista en pintura y remodelación de interiores. Ofrezco servicios de pintura de paredes, techos y retoques. Calidad garantizada y presupuesto ajustable a tus necesidades. ¡Embellece tu hogar hoy mismo!",
+                "image": "post-2.jpg"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Sofía Torres",
+        "profession": "Asistencia en Mudanzas",
+        "rating": 3.8,
+        "distance": 8.3,
+        "avatar": "1.jpg",
+        "banner": "1.jpg",
+        "posts": [
+            {
+                "post_id": 1,
+                "author": "Sofía Torres - Asistencia en Mudanzas",
+                "author_handler": "@sofiatorres",
+                "avatar": "1.jpg",
+                "time": "hace 3 horas",
+                "location": "Valparaíso, Cerro Barón",
+                "content": "Soy Sofía, especialista en organización y asistencia en mudanzas. Si necesitas ayuda empacando, transportando o desempacando tus cosas, estoy aquí para ayudarte a hacer la mudanza más fácil. Servicio rápido y cuidadoso. ¡Escríbeme para más detalles!",
+                "image": "post-1.jpg"
+            }
+        ]
+    }
+]

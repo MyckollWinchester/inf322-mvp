@@ -33,7 +33,7 @@ export default function Post({ post_id, author, /*author_handler,*/ avatar, time
                 {content}
             </div>
             
-            <Link to="/chat" className="post__send-message"><img className='inline-svg' src={iconSendMessage} alt='Ícono de enviar' style={{ marginRight: 4}}></img>Contactar</Link>
+            <Link to={`/chat/${post_id}`} className="post__send-message"><img className='inline-svg' src={iconSendMessage} alt='Ícono de enviar' style={{ marginRight: 4}}></img>Contactar</Link>
         </section>
     )
 }

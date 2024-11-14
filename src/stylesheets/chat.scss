@@ -39,23 +39,21 @@
     padding: 10px;
     margin: 2px 4px;
     color: white;
-}
 
-.msg-left{
-    background-color: rgb(192, 191, 191);
-    right: 0px;
-}
-.msg-right {
-    background-color: var(--main-accent);
-    justify-content: end;
+    &-left {
+        background-color: rgb(192, 191, 191);
+        right: 0px;
+    }
 
+    &-right {
+        background-color: var(--main-accent);
+        justify-content: end;
+    }
 }
 
 .messagebox {
     height: 45px;
-    // width: calc(var(--container-size)-2);
     width: 607px;
-    // display: sticky;
     background-color: white;
     z-index: 10;
     position: fixed;
@@ -63,14 +61,11 @@
     border-top: 1px solid rgb(197, 197, 197);
     border-right: 1px solid rgb(197, 197, 197);
     
-    
     &-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // gap: 10px;
         padding: 5px;
-
     }
     
     &-input{
@@ -78,12 +73,9 @@
         width: 100%;
         padding: 10px;
         margin: 0 10px;
-        // border: 1px solid var(--main-accent);
         border: none;
-        // border-radius: 20px;
 
         &:focus-visible{
-            // border-radius: none;
             border: none;
             outline: none;
         }
@@ -105,4 +97,3 @@
         transition: all ease-in-out 0.1s;
     }
 }
-

@@ -24,7 +24,7 @@ export default function HomePage() {
     image?: string;
   }
 
-  const [posts, setPosts] = useState<Post[]>([])
+  const [_, setPosts] = useState<Post[]>([])
 
   useEffect(() => setPosts(postData), [])
 

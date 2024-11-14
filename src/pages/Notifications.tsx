@@ -6,9 +6,10 @@ export const Notifications = () => {
       <main className="content">
         <div className="container">
           <div className="header-not notification">Notificaciones</div>
-          <Notification title='QUE' text='soi una notificasion!!!!!111!!!!' />
-          <Notification title='Mensaje recibido' text='hola, quisiera consultar por tus servisios aver q tal' />
-          <Notification title='Mensaje recibido' text='Bienvenido a HelpMyHome! no olvideis suscribiros y darle a la campanita like, un besaso adios' />
+          <Notification title='Javier ha comenzado a seguirte' text='Hace 2 horas' />
+          <Notification title='Mensaje recibido' text='Juan: ¿Qué días estás disponible?' />
+          <Notification title='Mensaje recibido' text='María: Hola, quisiera consultar por tus servicios.' />
+          <Notification title='Sistema' text='Bienvenido a HelpMyHome!' />
         </div>
 
       </main>

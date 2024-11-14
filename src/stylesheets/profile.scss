@@ -38,6 +38,10 @@
     }
 
     &__stars {
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: translate(4px, -3px);
+
         &-container {
             display: flex;
             justify-content: center;
@@ -50,10 +54,6 @@
         &-icon {
             width: 32px;
         }
-        
-        font-size: 1.5rem;
-        font-weight: 700;
-        transform: translate(4px, -3px);
     }
     
     &__distance {

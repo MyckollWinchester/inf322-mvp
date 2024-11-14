@@ -42,31 +42,37 @@
 	}
 }
 
-.aside-left__header {
-	position: sticky;
-	top: 0;
-	height: var(--header-height);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  .aside-left__logo {
-	display: flex;
-	justify-content: end;
-	gap: 8px;
-	align-items: center;
-  }
-  .aside-left__logo-container {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-  }
-  .aside-left__logo-text {
-	font-family: "Comic Sans MS", sans-serif;
-	font-weight: 700;
-	color: var(--main-accent);
-  }
-  .aside-left__logo-image {
-	width: 48px;
-  }
+.aside-left {
+	&__header {
+		position: sticky;
+		top: 0;
+		height: var(--header-height);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: end;
+		gap: 8px;
+		align-items: center;
+	}
+
+	&__logo-container {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__logo-text {
+		font-family: "Comic Sans MS", sans-serif;
+		font-weight: 700;
+		color: var(--main-accent);
+	}
+
+	&__logo-image {
+		width: 48px;
+	}
+}
 

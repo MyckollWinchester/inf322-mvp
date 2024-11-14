@@ -27,7 +27,18 @@ function App() {
               <Route path="/post/:id" element={<Post />} />
             </Routes>
           </div>
-          <Right />
+          <div className='layout__right'>
+            <Routes>
+              <Route path="/" element={<Right />} />
+              <Route path="/chat" element={<Right />} />
+              <Route path="/help" element={<Right />} />
+              <Route path="/notificaciones" element={<Right />} />
+              <Route path="/ajustes" element={<Right />} />
+              <Route path="/chat/:id" element={<Right />} />
+              <Route path="/profile/:id" element={<Right />} />
+              <Route path="/post/:id" element={<Right />} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </>

@@ -10,8 +10,6 @@ import '../stylesheets/left.scss'
 import '../stylesheets/buttons.scss'
 
 export const NavBar = () => {
-  const location = useLocation();
-
   return (
     <aside className='aside-left'>
       <div className="aside-left__content">
@@ -24,10 +22,10 @@ export const NavBar = () => {
           </div>
         </header>
         <nav className='navbar'>
-          <NavBarItem icon={iconHome} text='Inicio' to='/' isActive={location.pathname === '/'} />
-          <NavBarItem icon={iconMessages} text='Mensajes' to='/chat' isActive={location.pathname === '/chat'} />
-          <NavBarItem icon={iconNotifications} text='Notificaciones' to='/notificaciones' isActive={location.pathname === '/notificaciones'} />
-          <NavBarItem icon={iconSettings} text='Ajustes' to='/ajustes' isActive={location.pathname === '/ajustes'} />
+          <NavBarItem icon={iconHome} text='Inicio' to='/' />
+          <NavBarItem icon={iconMessages} text='Mensajes' to='/chat' />
+          <NavBarItem icon={iconNotifications} text='Notificaciones' to='/notificaciones' />
+          <NavBarItem icon={iconSettings} text='Ajustes' to='/ajustes' />
           <ButtonBig text='Crear Post' />
         </nav>
       </div>

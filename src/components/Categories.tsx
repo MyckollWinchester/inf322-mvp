@@ -6,7 +6,7 @@ import Category from './SimpleNavItem';
 export const Categories = () => {
     return (
         <div className="aside-right__categories">
-             <div className='aside-right__categories-title'>Categorias</div>
+             <div className='aside-right__categories-title'>Categorías</div>
             <Category text='Jardinería' icon={gardeningIcon} />
             <Category text='Fontanería' icon={plumbingIcon} />
             <Category text='Electricidad' icon={electricityIcon} />

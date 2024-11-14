@@ -1,5 +1,6 @@
 import '../stylesheets/right.scss';
 import defaultPfp from '../assets/pfp/default1.webp';
+import Categories from './Categories';
 
 interface RightProps {
     content?: React.ReactNode;
@@ -13,6 +14,7 @@ export const Right = ({ content: contentComponent }: RightProps) => {
                     <img src={defaultPfp} className="aside-right__profile-photo" alt='Perfil'></img>
                     Mi perfil
                 </header>
+                <Categories />
                 {contentComponent}
             </div>
         </aside>

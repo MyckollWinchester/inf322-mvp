@@ -41,4 +41,29 @@
             border-radius: 50%;
         }
     }
+
+    &__categories {
+        // right: 0;
+        position: relative;
+        &-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding-left: 15px;
+            padding-bottom: 6px;
+        }
+
+        &-more {
+            font-size: 0.9rem;            
+            color: var(--main-accent);
+            border: none;
+            left: 110px;
+            background-color: var(--background-color);
+            position: absolute;
+            // right: 120px;
+            &:hover {
+                cursor: pointer;
+
+            }
+        }
+    }
 }

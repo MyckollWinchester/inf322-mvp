@@ -1,26 +1,17 @@
-import flower from '../assets/icons/categories/flower.svg';
-import water from '../assets/icons/categories/water.svg';
-import thunder from '../assets/icons/categories/thunder.svg';
+import gardeningIcon from '../assets/icons/categories/flower.svg';
+import plumbingIcon from '../assets/icons/categories/water.svg';
+import electricityIcon from '../assets/icons/categories/thunder.svg';
 import Category from './SimpleNavItem';
 
-// interface CategoryProps {
-//     text: string;
-
-// }
-
 export const Categories = () => {
-
     return (
         <div className="aside-right__categories">
              <div className='aside-right__categories-title'>Categorias</div>
-            <Category text='Jardineria' icon={flower} />
-            <Category text='Fontaneria' icon={water} />
-            <Category text='Electricidad' icon={thunder} />
-            <button className='aside-right__categories-more' onClick={() => alert('Ver mas no implementado')}>
-                Ver más...
-            </button>
+            <Category text='Jardinería' icon={gardeningIcon} />
+            <Category text='Fontanería' icon={plumbingIcon} />
+            <Category text='Electricidad' icon={electricityIcon} />
+            <button className='aside-right__categories-more' onClick={() => alert('No implementado')}>Ver más...</button>
         </div>
-
     );
 }
 

@@ -1,5 +1,6 @@
 import '../stylesheets/right.scss';
 import defaultPfp from '../assets/pfp/default1.webp';
+import searchIcon from '../assets/icons/search.svg';
 import Categories from './Categories';
 
 interface RightProps {
@@ -10,11 +11,13 @@ export const Right = ({ content: contentComponent }: RightProps) => {
     return (
         <aside className="aside-right">
             <div className="aside-right__content">
-                <header className="aside-right__header" onClick={() => alert('Mi perfil no implementado')}>
-                    <img src={defaultPfp} className="aside-right__profile-photo" alt='Perfil'></img>
-                    Mi perfil
+                <header className="aside-right__header">
+                    <div className="aside-right__search-bar">
+                        <img src={searchIcon} alt="Buscar" className="aside-right__search-icon" />
+                        <input type="text" placeholder="Buscar..." className="aside-right__search-input" />
+                    </div>
                 </header>
-                <Categories />
+                
                 {contentComponent}
             </div>
         </aside>

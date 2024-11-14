@@ -1,5 +1,4 @@
 .aside-right {
-	// background-color: red;
 	display: flex;
 	width: calc((100% - var(--container-size))/2);
 	position: fixed;
@@ -14,55 +13,75 @@
 		display: flex;
 		justify-content: right;
 		align-items: center;
+        margin-bottom: 16px;
+    }
 
-        &:hover {
-            cursor: pointer;
+    &__search-bar {
+        display: flex;
+        width: 100%;
+        background-color: rgb(243, 243, 243);
+        border-radius: 20px;
+        padding: 12px;
+        margin: 0 8px;
+    }
+
+    &__search-icon {
+        margin-right: 10px;
+        width: 20px;
+        opacity: 0.6;
+    }
+
+    &__search-input {
+        width: 100%;
+        border: none;
+        background-color: rgb(243, 243, 243);
+        &:focus {
+            outline: none;
         }
     }
     
     &__content {
 		width: 288px;
-        // background-color: red;
-    }
-
-
-    &__profile {
-        display: flex;
-        // background-color: rgb(45, 180, 180);
-        // width: calc((100% - var(--container-size))/2);
-        align-items: center;
-        justify-content: right;
-        padding-right: 30px;
-        
-
-        &-photo {
-            margin: 10px 10px;
-            width: 40px;
-            border-radius: 50%;
-        }
     }
 
     &__categories {
-        // right: 0;
-        position: relative;
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            margin: 8px 0;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+
+                & .aside-right__categories-icon {
+                    transform: rotate(15deg);
+                }
+            }
+        }
+
+        &-icon {
+            transition: transform 0.3s;
+        }
+
         &-title {
             font-size: 1.1rem;
             font-weight: bold;
-            padding-left: 15px;
-            padding-bottom: 6px;
+            margin-left: 16px;
+            margin-bottom: 8px;
         }
 
         &-more {
             font-size: 0.9rem;            
             color: var(--main-accent);
             border: none;
-            left: 110px;
+            margin-top: 8px;
+            margin-left: 16px;
             background-color: var(--background-color);
-            position: absolute;
-            // right: 120px;
             &:hover {
                 cursor: pointer;
-
+                text-decoration: underline;
             }
         }
     }

@@ -8,9 +8,6 @@ export const Config = () => {
                     <div className='header-con'>
                         Ajustes
                     </div>
-                    <div className='config-item'>
-                        Nothing here yet
-                    </div>
                 </div>
             </main>
         </>

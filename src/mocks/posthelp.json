@@ -1,20 +1,22 @@
 [
     {
         "post_id": 1,
-        "author": "Antonia Castillo",
-        "author_handler": "@antoniacst",
+        "author": "Sofía Torres",
+        "author_handler": "@sofiatorres",
         "avatar": "1.jpg",
         "time": "hace 34 minutos",
-        "location": "Valparaíso, Cerro Carcel",
-        "content": "Mi calefon se sigue apagando en las mañanas, necesito un gasfiter que me ayude a revisarlo, por favor."
+        "location": "Valparaíso, Cerro Barón",
+        "content": "Mi calefon se sigue apagando en las mañanas, necesito un gásfiter que me ayude a revisarlo, por favor."
     },
-    {"post_id": 2,
-        "author": "Diego Soto",
-        "author_handler": "@sotozam",
+    {
+        "post_id": 2,
+        "author": "Roberto Silva",
+        "author_handler": "@robertosilva",
         "avatar": "2.jpg",
         "time": "hace 1 hora",
-        "location": "Valparaíso, Playa ancha",
-        "content": "hola, tengo una gotera en mi techo, necesito un maestro que me ayude a repararla, si puede los sabados mejor"
+        "location": "Valparaíso, Cerro Barón",
+        "content": "Hola, tengo una gotera en mi techo, necesito un maestro que me ayude a repararlo, si puede el sábado mejor.",
+        "image": "gotera.webp"
     }
 
 ]

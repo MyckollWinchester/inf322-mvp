@@ -8,7 +8,8 @@ import Notifications from '../pages/Notifications.tsx'
 import Profile from '../pages/Profile.tsx'
 import Post from '../pages/Post.tsx'
 import Config from '../pages/Config.tsx'
-import Categories from './Categories';
+import Categories from './Categories'
+import MiniProfile from './MiniProfile.tsx'
 
 function App() {
   return (
@@ -31,11 +32,10 @@ function App() {
           <div className='layout__right'>
             <Routes>
               <Route path="/" element={<Right content={<Categories />}/>} />
-              <Route path="/chat" element={<Right />} />
               <Route path="/help" element={<Right content={<Categories />}/>} />
               <Route path="/notificaciones" element={<Right />} />
               <Route path="/ajustes" element={<Right />} />
-              <Route path="/chat/:id" element={<Right />} />
+              <Route path="/chat/:id" element={<Right content={<MiniProfile />}/>} />
               <Route path="/profile/:id" element={<Right />} />
               <Route path="/post/:id" element={<Right />} />
             </Routes>

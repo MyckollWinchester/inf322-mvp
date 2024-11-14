@@ -7,6 +7,8 @@ export function NavBarItem({ icon, text, to }: { icon: string, text: string, to:
     let isActive = location.pathname === to;
     if (location.pathname === '/help' && to === '/') {
         isActive = true;
+    } else if (location.pathname.startsWith('/chat') && to === '/chat') {
+        isActive = true;
     }
     
     return (

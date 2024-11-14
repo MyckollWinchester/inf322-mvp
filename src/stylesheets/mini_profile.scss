@@ -1,0 +1,68 @@
+.geibriel-container {
+    width: 272.01px;
+    margin: 8px;
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.link-to:hover {
+    text-decoration: underline;    
+}
+
+.mini-profile {
+    position: relative;
+
+    &__pfp {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40px;
+        width: 96px;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        border: 6px solid white;
+    }
+
+    &__name {
+        text-align: center;
+        margin-top: 48px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__profession {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: grey;
+    }
+
+    &__stars {
+        font-size: 1.25rem;
+        font-weight: 700;
+        transform: translate(4px, -3px);
+        
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4px;
+            transform: translateX(-7px);
+            padding-bottom: 16px;
+        }
+        
+        &-icon {
+            width: 24px;
+        }
+    }
+    
+    &__distance {
+        font-size: .8rem;
+        border-top: 1px solid var(--secondary-bg-color);
+        display: flex;
+        color: rgb(55, 55, 55);
+        gap: 8px;
+        padding: 8px 8px;
+    }
+}

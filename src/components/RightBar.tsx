@@ -1,7 +1,5 @@
 import '../stylesheets/right.scss';
-import defaultPfp from '../assets/pfp/default1.webp';
 import searchIcon from '../assets/icons/search.svg';
-import Categories from './Categories';
 
 interface RightProps {
     content?: React.ReactNode;

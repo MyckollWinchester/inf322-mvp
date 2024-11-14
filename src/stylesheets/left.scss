@@ -44,6 +44,32 @@
 		width: 288px;
 		font-family: sans-serif;
 	}
+
+	&__profile {
+		display: flex;
+		position: fixed;
+		align-items: center;
+		bottom: 10px;
+		border-radius: 34px;
+		padding: 8px;
+		width: 268px;
+		
+		// border: 1px solid rgb(197, 197, 197);
+		// margin: 16px 0;
+		// flex-direction: column;
+
+		&-image {
+			width: 48px;
+			border-radius: 100%;
+			margin: 0 10px 0 10px;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: var(--secondary-bg-color);
+		}
+
+	}
 }
 
 .navbar {

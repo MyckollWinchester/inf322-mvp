@@ -8,6 +8,7 @@ import iconSettings from '../assets/icons/settings.svg'
 import logo from '../assets/logo.svg'
 import '../stylesheets/left.scss'
 import '../stylesheets/buttons.scss'
+import defaultPfp from '../assets/pfp/default1.webp';
 
 export const NavBar = () => {
   return (
@@ -28,6 +29,10 @@ export const NavBar = () => {
           <NavBarItem icon={iconSettings} text='Ajustes' to='/ajustes' />
           <ButtonBig text='Crear Post' />
         </nav>
+        <div className='aside-left__profile'>
+          <img className='aside-left__profile-image' src={defaultPfp} alt='Foto de perfil' />
+          <div className='aside-left__profile-name'>Nombre de perfil</div>
+        </div>
       </div>
     </aside>
   )

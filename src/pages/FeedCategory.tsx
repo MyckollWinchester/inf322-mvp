@@ -3,8 +3,11 @@ import postData from '../mocks/posts.json'
 import '../stylesheets/main.scss'
 import Post from '../components/Post'
 import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
-export default function HomePage() {
+export default function FeedCategory() {
+  const { category } = useParams<{ category: string }>()
+
   interface Post {
     post_id: number;
     author: string;
@@ -19,6 +22,8 @@ export default function HomePage() {
 
   const [posts, setPosts] = useState<Post[]>([])
 
+  const filteredPosts = posts.filter(post => post.category === category)
+
   useEffect(() => setPosts(postData), [])
 
   return (
@@ -27,10 +32,9 @@ export default function HomePage() {
         <div className="main-header">
           <div className="main-header__category">
             <a className="main-header__category__item main-header__category__item--selected">Ser Ayudado</a>
-            {/* <a href="/help" className="main-header__category__item">Ayudar</a> */}
             <Link to="/help" className="main-header__category__item">Ayudar</Link>
           </div>
-          {posts.map(post => (
+          {filteredPosts.map(post => (
             <Post key={post.post_id} {...post} />
           ))}
         </div>

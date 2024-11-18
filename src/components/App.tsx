@@ -3,6 +3,7 @@ import NavBar from './Sidebar.tsx'
 import Right from './RightBar.tsx'
 import Chat from '../pages/Chat.tsx'
 import Feed from '../pages/Feed.tsx'
+import FeedCategory from '../pages/FeedCategory.tsx'
 import FeedHelp from '../pages/FeedHelp.tsx'
 import Notifications from '../pages/Notifications.tsx'
 import Profile from '../pages/Profile.tsx'
@@ -22,8 +23,9 @@ function App() {
               <Route path='/' element={<Feed />} />
               <Route path='/chat' element={<Chat />} />
               <Route path='/help' element={<FeedHelp />} />
-              <Route path='/notificaciones' element={<Notifications />} />
               <Route path='/ajustes' element={<Config />} />
+              <Route path='/notificaciones' element={<Notifications />} />
+              <Route path='/categoria/:category' element={<FeedCategory />} />
               <Route path="/chat/:id" element={<Chat />} />
               <Route path="/profile/:id" element={<Profile />} />
               <Route path="/post/:id" element={<Post />} />
@@ -32,6 +34,7 @@ function App() {
           <div className='layout__right'>
             <Routes>
               <Route path="/" element={<Right content={<Categories />}/>} />
+              <Route path="/categoria/:category" element={<Right content={<Categories />}/>} />
               <Route path="/help" element={<Right content={<Categories />}/>} />
               <Route path="/notificaciones" element={<Right />} />
               <Route path="/ajustes" element={<Right />} />

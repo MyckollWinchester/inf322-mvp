@@ -6,7 +6,8 @@
         "avatar": "8.jpg",
         "time": "hace 23 segundos",
         "location": "Valparaíso, Cerro Barón",
-        "content": "¡Deja tu jardín impecable! Soy Juan, con más de 5 años de experiencia en jardinería, te ofrezco servicio de corte de pasto, poda de árboles y cuidado de plantas. Trabajo rápido y eficiente. Disponible los fines de semana. ¡Contáctame y dale vida a tu jardín!"
+        "content": "¡Deja tu jardín impecable! Soy Juan, con más de 5 años de experiencia en jardinería, te ofrezco servicio de corte de pasto, poda de árboles y cuidado de plantas. Trabajo rápido y eficiente. Disponible los fines de semana. ¡Contáctame y dale vida a tu jardín!",
+        "category": "jardineria"
     },
     {
         "post_id": 7,
@@ -16,7 +17,8 @@
         "time": "hace 12 minuto",
         "location": "Valparaíso, Cerro Barón",
         "content": "¿Tu lavadora o refrigerador está fallando? Soy María, técnica en reparación de electrodomésticos con 10 años de experiencia. Puedo arreglar desde microondas hasta lavavajillas. Servicio rápido, económico y garantizado. ¡No dudes en contactarme!",
-        "image": "post-7.png"
+        "image": "post-7.png",
+        "category": "electrodomesticos"
     },
     {
         "post_id": 6,
@@ -25,7 +27,8 @@
         "avatar": "6.jpg",
         "time": "hace 48 minutos",
         "location": "Valparaíso, Cerro Barón",
-        "content": "Soy Carlos, plomero con más de 15 años de experiencia en todo tipo de trabajos. Desde fugas de agua hasta instalación de tuberías nuevas, lo hago todo. Servicio disponible 24/7 para emergencias. ¡Llama ahora y te ayudo a resolver cualquier problema de plomería!"
+        "content": "Soy Carlos, plomero con más de 15 años de experiencia en todo tipo de trabajos. Desde fugas de agua hasta instalación de tuberías nuevas, lo hago todo. Servicio disponible 24/7 para emergencias. ¡Llama ahora y te ayudo a resolver cualquier problema de plomería!",
+        "category": "fontaneria"
     },
     {
         "post_id": 5,
@@ -34,7 +37,8 @@
         "avatar": "5.jpg",
         "time": "hace 1 hora",
         "location": "Valparaíso, Cerro Barón",
-        "content": "¿Necesitas ayuda con la limpieza de tu hogar? Ofrezco un servicio completo de limpieza, desde baños hasta cocina. Soy puntual, detallista y confiable. Precios accesibles y disponibilidad flexible. ¡Haz tu vida más fácil, contáctame!"
+        "content": "¿Necesitas ayuda con la limpieza de tu hogar? Ofrezco un servicio completo de limpieza, desde baños hasta cocina. Soy puntual, detallista y confiable. Precios accesibles y disponibilidad flexible. ¡Haz tu vida más fácil, contáctame!",
+        "category": "limpieza"
     },
     {
         "post_id": 4,
@@ -44,8 +48,19 @@
         "time": "hace 1 hora",
         "location": "Valparaíso, Cerro Barón",
         "content": "Soy Pedro, electricista certificado con más de 12 años de experiencia. Me especializo en instalaciones eléctricas, reparación de cortocircuitos, y mantenimiento general. Servicios seguros y confiables para tu hogar o negocio. ¡Contáctame para cualquier necesidad eléctrica!",
-        "image": "post-4.jpg"
+        "image": "post-4.jpg",
+        "category": "electricidad"
     },
+    {
+        "post_id": 9,
+        "author": "Carlos Rojas - Fontanería a tu Servicio",
+        "author_handler": "@carlosfontanero",
+        "avatar": "9.jpg",
+        "time": "hace 2 horas",
+        "location": "Valparaiso, Cerro alegre",
+        "content": "¿Problemas con tus tuberías? Soy un fontanero experto con más de 8 años de experiencia. Ofrezco servicios de reparación de fugas, instalación de grifería, destape de cañerías y mantenimiento de sistemas de agua. Trabajo garantizado, rápido y profesional. Disponible todos los días.",
+        "category": "fontaneria"
+    },    
     {
         "post_id": 3,
         "author": "Laura Ortiz - Cuidado de Mascotas",
@@ -53,7 +68,8 @@
         "avatar": "3.jpg",
         "time": "hace 2 horas",
         "location": "Valparaíso, Cerro Barón",
-        "content": "Soy Laura, amante de los animales y experta en cuidado de mascotas. Ofrezco servicios de paseo de perros, alimentación y compañía para tus amigos peludos cuando estés fuera. Conmigo estarán en las mejores manos. ¡Consulta disponibilidad!"
+        "content": "Soy Laura, amante de los animales y experta en cuidado de mascotas. Ofrezco servicios de paseo de perros, alimentación y compañía para tus amigos peludos cuando estés fuera. Conmigo estarán en las mejores manos. ¡Consulta disponibilidad!",
+        "category": "mascotas"
     },
     {
         "post_id": 2,
@@ -63,7 +79,8 @@
         "time": "hace 2 horas",
         "location": "Valparaíso, Cerro Barón",
         "content": "¿Quieres renovar tu hogar? Soy Roberto, especialista en pintura y remodelación de interiores. Ofrezco servicios de pintura de paredes, techos y retoques. Calidad garantizada y presupuesto ajustable a tus necesidades. ¡Embellece tu hogar hoy mismo!",
-        "image": "post-2.jpg"
+        "image": "post-2.jpg",
+        "category": "remodelacion"
     },
     {
         "post_id": 1,
@@ -73,6 +90,7 @@
         "time": "hace 3 horas",
         "location": "Valparaíso, Cerro Barón",
         "content": "Soy Sofía, especialista en organización y asistencia en mudanzas. Si necesitas ayuda empacando, transportando o desempacando tus cosas, estoy aquí para ayudarte a hacer la mudanza más fácil. Servicio rápido y cuidadoso. ¡Escríbeme para más detalles!",
-        "image": "post-1.jpg"
+        "image": "post-1.jpg",
+        "category": "mudanzas"
     }
 ]

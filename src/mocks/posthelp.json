@@ -6,7 +6,8 @@
         "avatar": "1.jpg",
         "time": "hace 34 minutos",
         "location": "Valparaíso, Cerro Barón",
-        "content": "Mi calefon se sigue apagando en las mañanas, necesito un gásfiter que me ayude a revisarlo, por favor."
+        "content": "Mi calefon se sigue apagando en las mañanas, necesito un gásfiter que me ayude a revisarlo, por favor.",
+        "category": "gasfiteria"
     },
     {
         "post_id": 2,
@@ -16,7 +17,8 @@
         "time": "hace 1 hora",
         "location": "Valparaíso, Cerro Barón",
         "content": "Hola, tengo una gotera en mi techo, necesito un maestro que me ayude a repararlo, si puede el sábado mejor.",
-        "image": "gotera.webp"
+        "image": "gotera.webp",
+        "category": "reparacion"
     }
 
 ]

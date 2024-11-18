@@ -31,8 +31,8 @@ export default function FeedCategory() {
       <div className="container">
         <div className="main-header">
           <div className="main-header__category">
-            <a className="main-header__category__item main-header__category__item--selected">Ser Ayudado</a>
-            <Link to="/help" className="main-header__category__item">Ayudar</Link>
+            <a className="main-header__category__item main-header__category__item--selected">Servicios</a>
+            <Link to="/help" className="main-header__category__item">Solicitudes</Link>
           </div>
           {filteredPosts.map(post => (
             <Post key={post.post_id} {...post} />

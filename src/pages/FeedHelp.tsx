@@ -26,8 +26,8 @@ export default function HomePage() {
         <div className="main-header">
           <div className="main-header__category">
             {/* <a href="/" className="main-header__category__item">Ser Ayudado</a> */}
-            <Link to="/" className="main-header__category__item">Ser Ayudado</Link>
-            <a className="main-header__category__item main-header__category__item--selected">Ayudar</a>
+            <Link to="/" className="main-header__category__item">Servicios</Link>
+            <a className="main-header__category__item main-header__category__item--selected">Solicitudes</a>
           </div>
           {posts.map(post => (
             <Post key={post.post_id} {...post} />

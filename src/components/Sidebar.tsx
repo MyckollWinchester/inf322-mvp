@@ -29,10 +29,10 @@ export const NavBar = () => {
           <NavBarItem icon={iconSettings} text='Ajustes' to='/ajustes' />
           <ButtonBig text='Crear Post' />
         </nav>
-        <div className='aside-left__profile'>
+        <button className='aside-left__profile' onClick={() => alert('Mi perfil no implementado')}>
           <img className='aside-left__profile-image' src={defaultPfp} alt='Foto de perfil' />
           <div className='aside-left__profile-name'>Nombre de perfil</div>
-        </div>
+        </button>
       </div>
     </aside>
   )

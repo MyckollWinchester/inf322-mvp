@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <main className="content">
       <div className="container">
-        <div className="main-header">
+        <div id="posts" className="main-header">
           <div className="main-header__category">
             {/* <a href="/" className="main-header__category__item">Ser Ayudado</a> */}
             <Link to="/" className="main-header__category__item">Servicios</Link>

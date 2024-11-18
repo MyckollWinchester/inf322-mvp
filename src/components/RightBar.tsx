@@ -10,9 +10,14 @@ export const Right = ({ content: contentComponent }: RightProps) => {
 
     useEffect(() => {
         const inputSearch = document.getElementById('input-search') as HTMLInputElement;
-        inputSearch.addEventListener('keydown', () => {
+        const handleKeyDown = () => {
             alert("No implementado");
-        });
+        };
+        inputSearch.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            inputSearch.removeEventListener('keydown', handleKeyDown);
+        };
     }, []);
 
     return (

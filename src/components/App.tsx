@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
 import NavBar from './Sidebar.tsx'
 import Right from './RightBar.tsx'
 import Chat from '../pages/Chat.tsx'
@@ -11,13 +12,20 @@ import Post from '../pages/Post.tsx'
 import Config from '../pages/Config.tsx'
 import Categories from './Categories'
 import MiniProfile from './MiniProfile.tsx'
+import Dialog from './Dialog.tsx'
 
 function App() {
+  const [isDialogVisible, setIsDialogVisible] = useState(false);
+
+  const toggleDialog = () => {
+    setIsDialogVisible(!isDialogVisible);
+  };
+
   return (
     <>
       <BrowserRouter>
         <div className='app'>
-          <NavBar />
+          <NavBar toggleDialog={toggleDialog} />
           <div className='layout__page'>
             <Routes>
               <Route path='/' element={<Feed />} />
@@ -33,18 +41,19 @@ function App() {
           </div>
           <div className='layout__right'>
             <Routes>
-              <Route path="/" element={<Right content={<Categories />}/>} />
-              <Route path="/categoria/:category" element={<Right content={<Categories />}/>} />
-              <Route path="/help" element={<Right content={<Categories />}/>} />
+              <Route path="/" element={<Right content={<Categories />} />} />
+              <Route path="/categoria/:category" element={<Right content={<Categories />} />} />
+              <Route path="/help" element={<Right content={<Categories />} />} />
               <Route path="/notificaciones" element={<Right />} />
               <Route path="/ajustes" element={<Right />} />
-              <Route path="/chat/:id" element={<Right content={<MiniProfile />}/>} />
+              <Route path="/chat/:id" element={<Right content={<MiniProfile />} />} />
               <Route path="/profile/:id" element={<Right />} />
               <Route path="/post/:id" element={<Right />} />
             </Routes>
           </div>
         </div>
       </BrowserRouter>
+      {isDialogVisible && <Dialog onClose={toggleDialog} />}
     </>
   )
 }

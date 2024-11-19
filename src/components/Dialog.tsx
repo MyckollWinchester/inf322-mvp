@@ -4,6 +4,7 @@ import '../stylesheets/dialog.scss';
 import imageIcon from '../assets/icons/image.svg';
 import defaultPfp from '../assets/pfp/default1.jpg';
 import iconPinpoint from '../assets/icons/pinpoint.svg';
+import { toast } from 'react-toastify';
 
 const Dialog = ({ onClose }: { onClose: () => void }) => {
     const [description, setDescription] = useState('');
@@ -21,6 +22,8 @@ const Dialog = ({ onClose }: { onClose: () => void }) => {
 
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
+
+        toast("Tu publicación ha sido creada");
 
         console.log({ description, photo });
         const postsDiv = document.getElementById('posts');

@@ -13,6 +13,8 @@ import Config from '../pages/Config.tsx'
 import Categories from './Categories'
 import MiniProfile from './MiniProfile.tsx'
 import Dialog from './Dialog.tsx'
+import { ToastContainer, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [isDialogVisible, setIsDialogVisible] = useState(false);
@@ -25,7 +27,7 @@ function App() {
     <>
       <BrowserRouter>
         <div className='app'>
-          <NavBar toggleDialog={toggleDialog} />
+          <NavBar />
           <div className='layout__page'>
             <Routes>
               <Route path='/' element={<Feed />} />
@@ -51,6 +53,19 @@ function App() {
               <Route path="/post/:id" element={<Right />} />
             </Routes>
           </div>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={3000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition={Slide}
+          />
         </div>
       </BrowserRouter>
       {isDialogVisible && <Dialog onClose={toggleDialog} />}

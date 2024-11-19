@@ -26,6 +26,23 @@ export default function FeedCategory() {
 
   useEffect(() => setPosts(postData), [])
 
+  let categoryText = "";
+
+  switch (category) {
+    case "jardineria":
+      categoryText = "Jardinería";
+      break;
+    case "fontaneria":
+      categoryText = "Fontanería";
+      break;
+    case "electrodomesticos":
+      categoryText = "Electrodomésticos";
+      break;
+    default:
+      categoryText = "Categoría no encontrada";
+  }
+
+
   return (
     <main className="content">
       <div className="container">
@@ -33,6 +50,9 @@ export default function FeedCategory() {
           <div className="main-header__category">
             <a className="main-header__category__item main-header__category__item--selected">Servicios</a>
             <Link to="/help" className="main-header__category__item">Solicitudes</Link>
+          </div>
+          <div className="header-not notification">
+            Publicaciones de {categoryText}
           </div>
           {filteredPosts.map(post => (
             <Post key={post.post_id} {...post} />

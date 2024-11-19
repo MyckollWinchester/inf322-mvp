@@ -13,7 +13,7 @@ export default function MiniProfile() {
 
   const handleRatingChange = (rating: number) => {
     console.log("Calificación seleccionada:", rating);
-    toast("test");
+    toast("Se ha calificado exitósamente", { type: 'success' });
   };
 
 

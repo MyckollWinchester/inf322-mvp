@@ -23,7 +23,7 @@ const Dialog = ({ onClose }: { onClose: () => void }) => {
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
-        toast("Tu publicación ha sido creada");
+        toast("Tu publicación ha sido creada", { type: 'success' });
 
         console.log({ description, photo });
         const postsDiv = document.getElementById('posts');

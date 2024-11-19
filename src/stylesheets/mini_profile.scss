@@ -60,9 +60,29 @@
     &__distance {
         font-size: .8rem;
         border-top: 1px solid var(--secondary-bg-color);
+        border-bottom: 1px solid var(--secondary-bg-color);
         display: flex;
         color: rgb(55, 55, 55);
         gap: 8px;
         padding: 8px 8px;
+    }
+
+    &__rating {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 8px;
+        align-items: center;
+        padding: 10px 0 10px 0;
+
+        &-container {
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+
+
     }
 }

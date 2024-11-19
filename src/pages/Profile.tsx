@@ -22,16 +22,16 @@ export default function Profile() {
           </div>
         </div>
         <div className='profile'>
-          <img src="/src/assets/profile-header.jpg" className="profile__header" />
-          <img src={`/src/assets/pfp/${user.avatar}`} className="profile__pfp" />
+          <img src={new URL('../assets/profile-header.jpg', import.meta.url).href} className="profile__header" />
+          <img src={new URL(`../assets/pfp/${user.avatar}`, import.meta.url).href} className="profile__pfp" />
           <h1 className="profile__name">{user.name}</h1>
           <h2 className="profile__profession">{user.profession}</h2>
           <div className="profile__stars-container">
-            <img src="/src/assets/icons/star.svg" className="profile__stars-icon" />
+            <img src={new URL('../assets/icons/star.svg', import.meta.url).href} className="profile__stars-icon" />
             <span className="profile__stars">{user.rating}</span>
           </div>
           <div className="profile__distance">
-            <img src="/src/assets/icons/pinpoint.svg" className="inline-svg" />
+            <img src={new URL('../assets/icons/pinpoint.svg', import.meta.url).href} className="inline-svg" />
             A {user.distance} km de tu ubicación
           </div>
         </div>

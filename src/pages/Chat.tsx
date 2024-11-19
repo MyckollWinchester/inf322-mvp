@@ -59,7 +59,7 @@ export const Chat = () => {
         <div className="container">
           <a className="name" href="profile/generic.html">
             <div className="name-content">
-              <img className="name-pfp" width={48} src={`/src/assets/pfp/${user ? user.id : 'default1'}.jpg`} alt='name pfp'></img>
+              <img className="name-pfp" width={48} src={new URL(`../assets/pfp/${user ? user.id : 'default1'}.jpg`, import.meta.url).href} alt='name pfp'></img>
               {user ? <div>{user.name}</div> : <div>User not found</div>}
             </div>
           </a>
@@ -67,11 +67,11 @@ export const Chat = () => {
           <div className="messagebox">
             <div className="messagebox-content">
               <div className="message-send">
-                <img className="icon" src={iconAttach} onClick={() => alert('Adjuntar no implementado')} alt='icon'></img>
+                <img className="icon" src={new URL('../assets/icons/attach.svg', import.meta.url).href} onClick={() => alert('Adjuntar no implementado')} alt='icon'></img>
               </div>
               <input id="chat-input" className="messagebox-input" type="text" placeholder="Escribir mensaje" />
               <div onClick={send} className="messagebox-send">
-                <img className="icon" src={iconSend} alt="Ícono de enviar"></img>
+                <img className="icon" src={new URL('../assets/icons/send.svg', import.meta.url).href} alt="Ícono de enviar"></img>
               </div>
             </div>
           </div>

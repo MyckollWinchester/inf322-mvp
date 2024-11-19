@@ -29,18 +29,18 @@ export default function MiniProfile() {
         </div>
       </div>
       <div className='mini-profile'>
-        <img src="/src/assets/profile-header.jpg" className="mini-profile__header" />
-        <img src={`/src/assets/pfp/${user.avatar}`} className="mini-profile__pfp" />
+        <img src={new URL('../assets/profile-header.jpg', import.meta.url).href} className="mini-profile__header" />
+        <img src={new URL(`../assets/pfp/${user.avatar}`, import.meta.url).href} className="mini-profile__pfp" />
         <h1 className="mini-profile__name">
           <Link to={`/profile/${user.id}`} className="mini-profile__name-link"><span className="link-to">{user.name}</span></Link>
         </h1>
         <h2 className="mini-profile__profession">{user.profession}</h2>
         <div className="mini-profile__stars-container">
-          <img src="/src/assets/icons/star.svg" className="mini-profile__stars-icon" />
+          <img src={new URL('../assets/icons/star.svg', import.meta.url).href} className="mini-profile__stars-icon" />
           <span className="mini-profile__stars">{user.rating}</span>
         </div>
         <div className="mini-profile__distance">
-          <img src="/src/assets/icons/pinpoint.svg" className="inline-svg" />
+          <img src={new URL('../assets/icons/pinpoint.svg', import.meta.url).href} className="inline-svg" />
           A {user.distance} km de tu ubicación
         </div>
         <div className='mini-profile__rating'>

@@ -3,8 +3,9 @@ import iconSendMessage from '../assets/icons/post-send.svg';
 import { Link } from 'react-router-dom';
 
 export default function Post({ post_id, author, /*author_handler,*/ avatar, time, location, content, image }: { post_id: number, author: string, author_handler: string, avatar: string, time: string, location: string, content: string, image?: string }) {
-    const pfpPath = require(`../assets/pfp/${avatar}`).default;
-    const imagePath = image ? require(`../assets/post/${image}`).default : null;
+    const pfpPath = new URL(`../assets/pfp/${avatar}`, import.meta.url).href;
+    const imagePath = image ? new URL(`../assets/post/${image}`, import.meta.url).href : undefined;
+    
     return (
         <section className="post">
             <header className="post__header post__header--offering">
